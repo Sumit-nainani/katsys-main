@@ -22,7 +22,7 @@ jobs:
         with:
           repository: Sumit-nainani/katsys-jlib
           # ref: ${{ github.head_ref }}
-          token: "67777"
+          token: ${{ secrets.SECRET_TOKEN_TEST }}
           path: ./katsys-jlib
           submodules: recursive
       - name: Print current directory
