@@ -18,11 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
         with:
           repository: Sumit-nainani/katsys-jlib
-          ref: ${{ github.head_ref }}
-          token: ${{ github.SECRET_TOKEN }}
+          # ref: ${{ github.head_ref }}
+          token: "67777"
           path: ./katsys-jlib
           submodules: recursive
       - name: Print current directory
