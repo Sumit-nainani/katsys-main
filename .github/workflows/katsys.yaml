@@ -8,7 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       PRODUCTS_JIRA_TICKETS:
+        description: 'Enter JIRA tickets for products'
         required: true
+        default: 'default_value_if_needed'
         type: string
 
 jobs:
